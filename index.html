@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Shera Putri Meylani</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="nav-avatar" id="navAvatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="nav-links">
+          <a href="#beranda" class="nav-link active" data-section="beranda">Beranda</a>
+          <a href="#tentang" class="nav-link" data-section="tentang">Tentang Saya</a>
+          <a href="#pendidikan" class="nav-link" data-section="pendidikan">Pendidikan</a>
+          <a href="#proyek" class="nav-link" data-section="proyek">Proyek</a>
+          <a href="#kontak" class="nav-link" data-section="kontak">Kontak</a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="nav-search-btn" id="searchToggle" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+        <div class="search-box" id="searchBox">
+          <input type="text" placeholder="Cari section..." id="searchInput" />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== SECTION 1: BERANDA ===== -->
+  <section class="section" id="beranda">
+    <div class="beranda-container">
+      <div class="beranda-left">
+        <div class="beranda-card">
+          <h1 class="beranda-title">Portofolio</h1>
+          <div class="beranda-name-pill">
+            <span>Shera Putri Meylani</span>
+          </div>
+          <p class="beranda-subtitle">Mahasiswa Informatika &amp; Game Asset Developer</p>
+          <div class="beranda-btns">
+            <a href="#tentang" class="btn-primary">Tentang Saya</a>
+            <a href="#kontak" class="btn-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+      </div>
+      <div class="beranda-right">
+        <div class="avatar-wrapper">
+          <div class="avatar-frame">
+            <img src="images/beranda.jpeg" alt="Avatar Shera" class="avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="avatar-placeholder" style="display:none;">
+              <i class="fas fa-user-circle"></i>
+            </div>
+          </div>
+          <div class="media-controls">
+            <button class="media-btn" id="soundBtn" aria-label="Toggle Sound">
+              <i class="fas fa-volume-up"></i>
+            </button>
+            <button class="media-btn" id="themeBtn" aria-label="Toggle Theme">
+              <i class="fas fa-cloud"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll ke bawah</span>
+      <i class="fas fa-chevron-down bounce"></i>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: TENTANG SAYA ===== -->
+  <section class="section" id="tentang">
+    <div class="section-header-pill">Tentang Saya</div>
+    <div class="tentang-container">
+      <div class="tentang-left">
+        <div class="profile-card">
+          <div class="profile-img-wrapper">
+            <div class="profile-img-placeholder">
+              <img src="images/tentang.jpeg" alt="Foto Shera Putri Meylani" class="profile-photo" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--mauve-bg),var(--purple-bg))'" />
+            </div>
+            <div class="profile-badge accept">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="profile-badge reject">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="profile-progress-bar">
+            <div class="progress-fill" id="profileProgress"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tentang-right">
+        <h2 class="section-title mauve">Tentang<br/>Saya</h2>
+        <div class="tentang-bio-card">
+          <p>
+            Halo! Saya <strong>Shera Putri Meylani</strong>, mahasiswa Informatika di Universitas Jember.
+            Saya tertarik pada dunia game development, khususnya dalam pembuatan aset game.
+            Saya juga memiliki ketertarikan pada menggambar, melukis, dan desain. Ke depannya,
+            saya ingin mengembangkan kemampuan tersebut untuk menjadi game developer yang berfokus
+            pada pembuatan aset game.
+          </p>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">🎮 Game Development</span>
+          <span class="tag">🎨 Desain Aset</span>
+          <span class="tag">🖌️ Digital Art</span>
+          <span class="tag">💻 Informatika</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: PENDIDIKAN ===== -->
+  <section class="section" id="pendidikan">
+    <div class="section-header-pill">Pendidikan</div>
+    <div class="pendidikan-container">
+      <div class="pendidikan-left">
+        <h2 class="section-title brown">Pendidikan</h2>
+        <div class="edu-timeline">
+          <div class="edu-item" data-aos="fade-up">
+            <div class="edu-bar"></div>
+            <div class="edu-content">
+              <h3>SMA NEGERI 1 CLURING</h3>
+              <span class="edu-year">2023 – 2025</span>
+            </div>
+          </div>
+          <div class="edu-item" data-aos="fade-up">
+            <div class="edu-bar"></div>
+            <div class="edu-content">
+              <h3>UNIVERSITAS NEGERI JEMBER</h3>
+              <span class="edu-year">2025 – sekarang</span>
+              <p>Sedang menempuh pendidikan S1 Prodi Informatika</p>
+            </div>
+          </div>
+        </div>
+        <div class="toggle-wrapper">
+          <label class="toggle-label">Status Aktif</label>
+          <div class="toggle-switch active" id="eduToggle">
+            <div class="toggle-thumb"></div>
+          </div>
+          <span class="toggle-status" id="toggleStatus">Aktif Kuliah</span>
+        </div>
+      </div>
+      <div class="pendidikan-right">
+        <div class="art-card">
+          <div class="art-img-placeholder anime">
+            <i class="fas fa-paint-brush"></i>
+            <span>Anime Art</span>
+          </div>
+        </div>
+        <div class="deco-square purple-sq"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: PROYEK SAYA ===== -->
+  <section class="section" id="proyek">
+    <div class="proyek-container">
+      <div class="proyek-left">
+        <div class="proyek-art-card">
+          <img src="images/proyek.jpeg" alt="Ocean Guardian Game Art" class="proyek-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="art-img-placeholder ocean" style="display:none;">
+            <i class="fas fa-water"></i>
+            <span>Ocean Guardian</span>
+          </div>
+        </div>
+        <h2 class="section-title gold">Proyek Saya</h2>
+        <ul class="proyek-list">
+          <li>
+            <strong>Ocean Guardian</strong> — projek game untuk lomba Gemastik yang masih dikembangkan
+          </li>
+        </ul>
+      </div>
+      <div class="proyek-right">
+        <div class="calendar-widget">
+          <div class="calendar-header">
+            <i class="fas fa-calendar-alt"></i>
+            <span id="calMonth">September 2026</span>
+          </div>
+          <div class="calendar-grid" id="calGrid"></div>
+        </div>
+        <button class="next-btn" id="nextProjectBtn" aria-label="Next Project">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="deco-square blue-sq"></div>
+      </div>
+    </div>
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+        <h3>Ocean Guardian</h3>
+        <p>Game bertema lingkungan laut yang dikembangkan untuk lomba <strong>Gemastik</strong>. Fokus pada pembuatan aset visual game berupa karakter, environment, dan UI.</p>
+        <div class="modal-tags">
+          <span class="tag">🌊 Game</span>
+          <span class="tag">🎨 Asset Design</span>
+          <span class="tag">🏆 Gemastik</span>
+        </div>
+        <div class="modal-status">
+          <span class="status-dot"></span> Sedang Dikembangkan
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: KONTAK ===== -->
+  <section class="section" id="kontak">
+    <div class="section-header-pill">Kontak Saya</div>
+    <div class="kontak-container">
+      <div class="kontak-left">
+        <h2 class="section-title mauve">Kontak</h2>
+        <div class="kontak-info-card">
+          <div class="kontak-item" id="copyPhone">
+            <div class="kontak-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <span>089516951670</span>
+            <span class="copy-hint">klik untuk salin</span>
+          </div>
+          <div class="kontak-item" id="copyEmail">
+            <div class="kontak-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <span>sheraputri1705@gmail.com</span>
+            <span class="copy-hint">klik untuk salin</span>
+          </div>
+          <div class="kontak-item">
+            <div class="kontak-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <span>Banyuwangi</span>
+          </div>
+        </div>
+      </div>
+      <div class="kontak-right">
+        <div class="water-lily-card">
+          <img src="images/kontak.jpeg" alt="Water Lily Painting" class="waterlily-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="art-img-placeholder waterlily" style="display:none;">
+            <i class="fas fa-leaf"></i>
+            <span>Water Lily Painting</span>
+          </div>
+        </div>
+        <div class="kontak-actions">
+          <button class="action-btn" id="pauseBtn" aria-label="Pause">
+            <i class="fas fa-pause"></i>
+          </button>
+          <button class="action-btn" id="shareBtn" aria-label="Share">
+            <i class="fas fa-share-alt"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Share Modal -->
+    <div class="share-modal" id="shareModal">
+      <div class="modal-content">
+        <button class="modal-close" id="shareClose"><i class="fas fa-times"></i></button>
+        <h3>Bagikan Portfolio</h3>
+        <p>Salin link di bawah ini:</p>
+        <div class="share-link-box">
+          <span id="shareUrl">sheraputri-portfolio.web</span>
+          <button id="copyLink"><i class="fas fa-copy"></i></button>
+        </div>
+        <div class="social-share">
+          <button class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></button>
+          <button class="social-btn twitter"><i class="fab fa-twitter"></i></button>
+          <button class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== CURSOR SPARKLE ===== -->
+  <div class="cursor-sparkle" id="cursorSparkle"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
